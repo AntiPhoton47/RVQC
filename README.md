@@ -2,7 +2,7 @@
 A repository for the code used in the paper "A Universal Quantum Computer From Relativistic Motion."
 
 To reproduce the figure in the quantum Fourier transform section of the supplementary material from the data contained in the Training Data folder, run the following script:
-
+```
 data = np.load('Loss_Fidelity_Seed.npz')
 
 new_fid = data['fvals']
@@ -62,3 +62,4 @@ with sns.axes_style("darkgrid"):
     ax[1].set_ylim(-0.1, max(loss_means_cut)+0.2)
     
 plt.show()
+```
