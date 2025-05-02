@@ -3,6 +3,12 @@ A repository for the code used in the paper "A Universal Quantum Computer From R
 
 To reproduce the figure in the quantum Fourier transform section of the supplementary material from the data contained in the Training Data folder, run the following script:
 ```
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes, mark_inset
+import seaborn as sns
+
 data = np.load('Loss_Fidelity_Seed.npz')
 
 new_fid = data['fvals']
