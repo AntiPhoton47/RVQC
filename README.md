@@ -1,7 +1,7 @@
 # RVQC
 A repository for the code used in the paper "A Universal Quantum Computer From Relativistic Motion."
 
-To reproduce the figure in the quantum Fourier transform section of the supplementary material from the data contained in the Training Data folder, run the following script:
+To reproduce the figure in the quantum Fourier transform section of the supplementary material from the data contained in the Training Data folder, run the following python script:
 ```
 import numpy as np
 import matplotlib as mpl
