@@ -1,7 +1,7 @@
 # RVQC
 A repository for the code used in the paper "A Universal Quantum Computer From Relativistic Motion."
 
-To reproduce the figure in the quantum Fourier transform section of the supplementary material from the data contained in the Training Data folder, run the following python script:
+To reproduce the figure in the quantum Fourier transform section of the supplementary material from the data contained in the Training Data folder of this repository, first download the data to your machine and specify the file path if running on Windows, then run the following python script:
 ```
 import numpy as np
 import matplotlib as mpl
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes, mark_inset
 import seaborn as sns
 
-data = np.load('Loss_Fidelity_Seed.npz')
+data = np.load('Loss_Fidelity_Seed.npz') # add file path to argument if using Windows
 
 new_fid = data['fvals']
 new_loss = data['lvals']
